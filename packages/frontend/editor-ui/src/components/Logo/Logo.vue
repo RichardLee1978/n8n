@@ -5,6 +5,7 @@ import { useFavicon } from '@vueuse/core';
 
 import LogoIcon from './logo-icon.svg';
 import LogoText from './logo-text.svg';
+import LogoChina from './logo_new.svg';
 
 const props = defineProps<
 	(
@@ -58,7 +59,8 @@ onMounted(() => {
 <template>
 	<div :class="containerClasses" data-test-id="n8n-logo">
 		<LogoIcon ref="logo" :class="$style.logo" />
-		<LogoText v-if="showLogoText" :class="$style.logoText" />
+		<!-- <LogoText v-if="showLogoText" :class="$style.logoText" /> -->
+		<span v-if="showLogoText" :class="$style.logoText">n8n中国</span>
 		<slot />
 	</div>
 </template>
@@ -68,6 +70,9 @@ onMounted(() => {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 1rem;
+	width: 80%;
+	height: 30px;
 }
 
 .logoText {
@@ -88,8 +93,11 @@ onMounted(() => {
 }
 
 .logoText {
-	margin-left: var(--spacing-xs);
-	margin-right: var(--spacing-3xs);
+	/*margin-left: var(--spacing-xs);
+	margin-right: var(--spacing-3xs);*/
+	font-size: x-small;
+	line-height: 100%;
+	margin-top: var(--spacing-2xs);
 }
 
 .sidebarExpanded .logo {

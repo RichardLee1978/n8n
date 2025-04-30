@@ -92,7 +92,8 @@ const mainMenuItems = computed(() => [
 		position: 'bottom',
 		available: settingsStore.isTemplatesEnabled && !templatesStore.hasCustomTemplatesHost,
 		link: {
-			href: templatesStore.websiteTemplateRepositoryURL,
+			//href: templatesStore.websiteTemplateRepositoryURL,
+			href: 'https://n8nchina.net/robot.html',
 			target: '_blank',
 		},
 	},
