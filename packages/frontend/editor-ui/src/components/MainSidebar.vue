@@ -98,6 +98,16 @@ const mainMenuItems = computed(() => [
 		},
 	},
 	{
+		id: 'forum',
+		icon: 'users',
+		label: i18n.baseText('mainSidebar.helpMenuItems.forum'),
+		position: 'bottom',
+		link: {
+			href: 'https://n8nchina.net/',
+			target: '_blank',
+		},
+	},
+	{
 		id: 'variables',
 		icon: 'variable',
 		label: i18n.baseText('mainSidebar.variables'),
@@ -140,21 +150,21 @@ const mainMenuItems = computed(() => [
 					target: '_blank',
 				},
 			},
-			{
-				id: 'forum',
-				icon: 'users',
-				label: i18n.baseText('mainSidebar.helpMenuItems.forum'),
-				link: {
-					href: 'https://community.n8n.io?utm_source=n8n_app&utm_medium=app_sidebar',
-					target: '_blank',
-				},
-			},
+			// {
+			// 	id: 'forum',
+			// 	icon: 'users',
+			// 	label: i18n.baseText('mainSidebar.helpMenuItems.forum'),
+			// 	link: {
+			// 		href: 'https://community.n8n.io?utm_source=n8n_app&utm_medium=app_sidebar',
+			// 		target: '_blank',
+			// 	},
+			// },
 			{
 				id: 'examples',
 				icon: 'graduation-cap',
 				label: i18n.baseText('mainSidebar.helpMenuItems.course'),
 				link: {
-					href: 'https://docs.n8n.io/courses/',
+					href: 'https://n8nchina.net/courseDetail.html?id=67eb8ca340a5da194ec54c91&type=0',
 					target: '_blank',
 				},
 			},
