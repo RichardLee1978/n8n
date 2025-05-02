@@ -1040,7 +1040,7 @@
 	"mainSidebar.showMessage.handleSelect2.title": "工作流程已创建",
 	"mainSidebar.showMessage.handleSelect3.title": "工作流程已创建",
 	"mainSidebar.showMessage.stopExecution.title": "执行已停止",
-	"mainSidebar.templates": "模板",
+	"mainSidebar.templates": "智能体",
 	"mainSidebar.workflows": "工作流程",
 	"mainSidebar.workflows.readOnlyEnv.tooltip": "受保护的实例可防止编辑工作流程（推荐用于生产环境）。{link}",
 	"mainSidebar.workflows.readOnlyEnv.tooltip.link": "更多信息",

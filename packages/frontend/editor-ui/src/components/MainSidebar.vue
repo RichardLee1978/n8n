@@ -85,6 +85,16 @@ const mainMenuItems = computed(() => [
 		route: { to: { name: VIEWS.TEMPLATES } },
 	},
 	{
+		id: 'examples',
+		icon: 'graduation-cap',
+		label: i18n.baseText('mainSidebar.helpMenuItems.course'),
+		position: 'bottom',
+		link: {
+			href: 'https://n8nchina.net/courseDetail.html?id=67eb8ca340a5da194ec54c91&type=0',
+			target: '_blank',
+		},
+	},
+	{
 		// Link to website templates, available if custom templates are not enabled
 		id: 'templates',
 		icon: 'box-open',
@@ -103,7 +113,7 @@ const mainMenuItems = computed(() => [
 		label: i18n.baseText('mainSidebar.helpMenuItems.forum'),
 		position: 'bottom',
 		link: {
-			href: 'https://n8nchina.net/',
+			href: 'https://c.n8nchina.net/',
 			target: '_blank',
 		},
 	},
@@ -159,15 +169,15 @@ const mainMenuItems = computed(() => [
 			// 		target: '_blank',
 			// 	},
 			// },
-			{
-				id: 'examples',
-				icon: 'graduation-cap',
-				label: i18n.baseText('mainSidebar.helpMenuItems.course'),
-				link: {
-					href: 'https://n8nchina.net/courseDetail.html?id=67eb8ca340a5da194ec54c91&type=0',
-					target: '_blank',
-				},
-			},
+			// {
+			// 	id: 'examples',
+			// 	icon: 'graduation-cap',
+			// 	label: i18n.baseText('mainSidebar.helpMenuItems.course'),
+			// 	link: {
+			// 		href: 'https://n8nchina.net/courseDetail.html?id=67eb8ca340a5da194ec54c91&type=0',
+			// 		target: '_blank',
+			// 	},
+			// },
 			{
 				id: 'report-bug',
 				icon: 'bug',
